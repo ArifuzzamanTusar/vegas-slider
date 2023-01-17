@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://zeptojs.com/zepto.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js"></script>
+
+
+    <style>
+        .at-slider-section #at-bg-slider {
+            min-height: 100vh;
+
+        }
+
+        .at-slider-section {
+            position: relative;
+        }
+
+        .at-slider-section .at-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .at-slider-section .at-container .at-heading-text {
+            font-size: 84px
+        }
+    </style>
+
+    <section class="at-slider-section">
+        <div class="bg-slider">
+            <div id="at-bg-slider"></div>
+        </div>
+
+        <div class="at-container">
+            <div class="at-heading-container">
+                <h3 class="at-heading-text">Cooke</h3>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        $("#at-bg-slider").vegas({
+          
+            delay: 5000,
+            slidesToKeep: 1,
+            transition: 'fade2',
+            transitionDuration: 5000,
+            animation: 'random',
+            animationDuration: 5000,
+            slides: [
+                { src: "https://images.squarespace-cdn.com/content/5e8fe7947bd8664ed82e273c/1673917964000-MOD618QH7FH1ZZNPBQH6/PRI%2B2019-1-11%2Bcopy.jpeg" },
+                { src: "https://images.squarespace-cdn.com/content/5e8fe7947bd8664ed82e273c/1673917966453-KQDBVRDGOD1LC2DB2J7R/SEMA%2B2021-2.jpeg" },
+                { src: "https://images.squarespace-cdn.com/content/5e8fe7947bd8664ed82e273c/1673917963023-7NUIA3T5GS93AHPU4NEM/PRI%2B2019-1-10%2Bcopy.jpeg" },
+                { src: "https://images.squarespace-cdn.com/content/5e8fe7947bd8664ed82e273c/1673917950765-CLBBBNT58AGHVPUMX365/DSC03088.jpeg" },
+                { src: "https://images.squarespace-cdn.com/content/5e8fe7947bd8664ed82e273c/1673917944065-KOTB2HD3XF8TBPUIMA7O/DSC02517.jpeg" },
+                { src: "https://images.squarespace-cdn.com/content/5e8fe7947bd8664ed82e273c/1673917950765-CLBBBNT58AGHVPUMX365/DSC03088.jpeg" },
+                { src: "https://images.squarespace-cdn.com/content/5e8fe7947bd8664ed82e273c/1673917949610-FBOGPD0QKH0E4RDRPGMS/DSC02904.jpeg" }
+            ]
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- credit : https://vegas.jaysalvat.com/ -->
+<!-- Documentation: https://vegas.jaysalvat.com/documentation/setup -->

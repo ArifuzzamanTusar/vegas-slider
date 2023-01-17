@@ -1,0 +1,26 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.at-slider-section #at-bg-slider{
+    min-height: 100vh;
+    
+}
+.at-slider-section{
+    position: relative;
+}
+.at-slider-section .at-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.at-slider-section .at-container .at-heading-text{
+    font-size: 84px
+}
